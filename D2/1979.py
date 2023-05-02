@@ -20,4 +20,5 @@ for _ in range(T):
                 if cnt == K:
                     result += 1
                 cnt = 0
+
     print("#%d %d" %(_+1, result))
