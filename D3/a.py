@@ -1,2 +1,2 @@
-array = list(input() for _ in range(3))
-print(array[0][2])
+adj = list(map(int, input()) for _ in range(2))
+print(adj)
