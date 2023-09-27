@@ -2,7 +2,7 @@
 from collections import deque
 
 def bfs(s):
-    global ans
+
     q = deque()
     q.append(s)
     v[s] = 1
@@ -24,7 +24,7 @@ def dfs(s):
     for n in adj[s]:
         if not v[n]:
             dfs(n)
-    return ans
+    return ans - 1
     
 
 n = int(input())
@@ -36,4 +36,4 @@ for _ in range(m):
     i, j = map(int, input().split())
     adj[i].append(j)
     adj[j].append(i)
-print(dfs(1))
+print(bfs(1))
