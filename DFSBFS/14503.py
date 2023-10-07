@@ -17,8 +17,8 @@ def solve(ci, cj, d):
         if adj[ci+move[d][0]][cj+move[d][1]] == 0:
             ni, nj = ci+move[d][0], cj+move[d][1]
             solve(ni, nj, d)
-
-        solve(ci, cj, d)
+        else:
+            solve(ci, cj, d)
     
 N, M = map(int, input().split())
 si, sj, d = map(int, input().split())

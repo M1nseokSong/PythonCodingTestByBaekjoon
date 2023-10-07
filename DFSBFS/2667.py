@@ -27,5 +27,6 @@ for i in range(n):
         if adj[i][j]==1 and v[i][j] == 0:
             bfs(i, j)
 
+ans.sort()
 print(len(ans))
 print(*ans, sep="\n")
